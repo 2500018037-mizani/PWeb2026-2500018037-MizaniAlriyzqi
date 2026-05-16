@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Layout CSS 3 Kolom</title>
+
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial;
+            margin: 0;
+        }
+
+        /* HEADER */
+        .header{
+            background-color: #4CAF50;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        /* KOLOM */
+        .column{
+            float: left;
+            padding: 20px;
+            height: 300px;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+        }
+
+        .left{
+            width: 33.33%;
+            background-color: #2196F3;
+        }
+
+        .middle{
+            width: 33.33%;
+            background-color: #f44336;
+        }
+
+        .right{
+            width: 33.33%;
+            background-color: #ff9800;
+        }
+
+        /* CLEAR FLOAT */
+        .row:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* FOOTER */
+        .footer{
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        HEADER
+    </div>
+
+    <div class="row">
+
+        <div class="column left">
+            SIDEBAR KIRI
+        </div>
+
+        <div class="column middle">
+            CONTENT / ISI
+        </div>
+
+        <div class="column right">
+            SIDEBAR KANAN
+        </div>
+
+    </div>
+
+    <div class="footer">
+        FOOTER
+    </div>
+
+</body>
+</html>
